@@ -1,0 +1,28 @@
+modules used in project :-
+Ear biometrics :- 
+1: Tensorflow = To train the model 
+2: Opencv = To read images
+3: Numpy = To perform matrics operations on image 
+4: Matplotlib = To plot image 
+
+Fingerprint biometrics :-
+1: Opencv = To read images
+2: Numpy = To perform matrics operations on image
+
+Info:-
+Ear biometrics :-
+
+Model is trained on the images stores in train folder and tested model on data stored in test folder
+relu, softmax these are the activation functions used in neural network.
+model is stored in model_opt.h5 file, to predict the image model is imported from this file.
+
+Fingerprint biometrics :-
+
+Sample fingerprints are stored in SOCOFing folder with different difficulties.
+to match fingerprint first keypoints and discriptors are collected from image, then using knnmatch function points are match with each image in storage.
+knnmatch function finds the k best matches for each descriptor from a query set.
+then based on the error in both matches fingerprint image is matched.
+and all matched points are shown in the end.
+
+
+

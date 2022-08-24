@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biometric System</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="body">
+      <div class="header">
+        <h1>Biometric System</h1>
+      </div>
+      <div class="container">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+          <div class="ear-container">
+            <label>Ear Image</label>
+            <input type="file" name="ear" accept="image/*" />
+          </div>
+          <div class="ear-container">
+            <label>Fingerprint</label>
+            <input type="file" name="fingerprint" accept="image/*" />
+          </div>
+          <input type="submit" class="btn" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
